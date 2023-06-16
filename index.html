@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">  
+    <header id="inicio">
+        <div>
+            <h2>Programacion 3-cent 35</h2>
+        </div>
+        
+		<nav>
+			<ul>
+				<li><a href="#inicio">Home</a></li>
+				<li><a href="#profesionales">Contact</a></li>
+				<li><a href="#contacto">Product</a></li>
+				<li><a href="#turno">Service</a></li>
+			</ul>
+		</nav>
+         
+        </header>
+    
+
+    <!-- Main-->
+    <main>
+        
+        <h1>Aqui puedes registrar a los usuarios</h1>
+		<!-- Formulario -->
+        <section id="formulario">            
+        <form class="formularioUsuarios">
+            <label for="nombre">Nombre:</label>
+            <input class="inputs" type="text" id="nombre" name="nombre" autocomplete="off" required><br><br>
+      
+            <label for="email">Email:</label>
+            <input class="inputs" type="email" id="email" name="email" autocomplete="off" required><br><br>
+      
+            <label for="contrasena">Contraseña:</label>
+            <input class="inputs" type="password" id="contrasena" name="contrasena" autocomplete="new-password" required><br><br>
+                  
+            <!-- usamos el select para tener uno con opciones cargado -->
+            
+            <select class="inputs" name="provincia" id="provincia">
+                <option value="">Seleccione su provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Tierra del fuego">Tierra del fuego</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Cordoba">Cordoba</option>
+            </select>
+
+            <input type="submit" value="Registrar">
+        </form>
+		</section>
+        <!--Div que contiene las card-->
+        <section>
+            <h2 style="width: 100%; text-align: center;">Usuarios</h2>
+            <!-- Contenedor de usuarios -->
+            <div id="contenedorusuarios">
+            </div>
+		</section>
+    </main>
+    <!--********        Footer   **********-->
+    <footer>
+        <div class="footer_container">
+            <p>Cent 35 ©Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+  
+  
+  
+<script src="js/script.js"></script>
+</div>
+</body>
+</html>

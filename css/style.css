@@ -1,0 +1,175 @@
+/* Body  */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+/*    min-height: 100vh; /*Ocupa el 100% del alto */
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(238, 241, 241);
+}
+
+header, main, footer{
+    width: 100%;
+
+}
+
+/*** Header footer y mains***/
+p{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1px;
+    margin-left: 6px;
+}
+
+/*** Header footer y mains***/
+header{
+    height: 66px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(31, 155, 160);
+}
+main{
+    min-height: calc(100vh - 66px);
+}
+
+
+main, footer{
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+/******* nav ********/
+header div{
+    margin-left: 5px;
+}
+
+header div h2{
+    color: #f2f2f2;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    display: block;
+    padding: 15px 26px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+
+
+/* Estilos de las tarjetas de usuario */
+
+main h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+main section{
+    width: 80%;
+}
+
+main section form .inputs {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: transparent; /* Establecer el fondo transparente */
+}
+
+main section form input[type="submit"] {
+    width: 15%;
+    color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #1c1c1c;
+}
+
+/*** Flex para contenedor de card****/
+main section #contenedorusuarios{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+
+main section #contenedorusuarios .tarjeta{
+    width: 177px;
+    display: flex;
+    height: 60px;
+    margin: 6px;
+    padding: 3px;
+    font-size: 0.8em;
+    background-color: rgb(101, 50, 204);
+    color: #f2f2f2;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: width 0.3s, height 0.3s; /* Agregamos una transición suave */
+}
+
+main section #contenedorusuarios .tarjeta:hover {
+  width: 183px;
+  height: 66px;
+  font-size: 0.9em;
+}
+
+
+
+/* Deshabilitar la sugerencia de texto guardado */
+.formularioUsuarios input:-webkit-autofill,
+.formularioUsuarios input:-webkit-autofill:hover,
+.formularioUsuarios input:-webkit-autofill:focus,
+.formularioUsuarios input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
